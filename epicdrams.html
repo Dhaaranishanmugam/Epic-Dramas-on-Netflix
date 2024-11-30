@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Epic dramas Page</title>
+    <style>
+        /* Reset default margin and padding for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff; /* Light blue background */
+    display: flex; /* Use flexbox for layout */
+    min-height: 100vh; /* Minimum height of viewport */
+    flex-direction: column; /* Stack children vertically */
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    /*background-color: #fff; /* White background */
+    /*box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+nav h1 {
+    color: #7CC1D7; /* Purple text color */
+    font-size: 30px;
+    margin: 0; /* Remove margin */
+}
+
+nav button {
+    background-color: #7CC1D7; /* Purple button background */
+    color: white; /* White text color */
+    padding: 10px 20px;
+    margin-left: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.content {
+    flex: 1; /* Take remaining vertical space */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Center content vertically */
+    text-align: center;
+    padding: 20px;
+}
+
+.content h2 {
+    color: #7CC1D7; /* Dark purple text */
+}
+
+.story-grid {
+    display: grid;
+    grid-template-columns: repeat(5,1fr); /* Responsive grid layout */
+    gap: 20px;
+    /*width: 100%; /* Full width */
+    /*justify-items: center; /* Center items horizontally */
+}
+
+.story-grid a {
+    text-decoration: none;
+    color: white; /* Purple text */
+    background-color:#7CC1D7; /* Light purple background */
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+    display: block;
+}
+
+.story-grid a:hover {
+    background-color: #dcdcdc; /* Darker background on hover */
+}
+
+    </style>
+</head>
+<body>
+    <nav>
+        <h1>Epic Dramas on Netflix</h1>
+        <div>
+            <button type="button" onclick="location.href='http://127.0.0.1:5500/HTML/HTML%20HW/dramahome.html';">Home</button>
+            <button type="button" onclick="location.href='http://127.0.0.1:5500/HTML/HTML%20HW/epicdrams.html';">Epic drams</button>
+            <!--<button type="button" onclick="location.href='';">Books</button>-->
+            <button type="button" onclick="location.href='http://127.0.0.1:5500/HTML/HTML%20HW/contactdrama.html';">Contact Us</button>
+        </div>
+        
+    </nav>
+
+    <div class="content">
+        <h2>The Dramas</h2>
+        <br>
+        <p>Choose a drama to know about the story:</p>
+        <br>
+        <br>
+        <div class="story-grid">
+            <a href ="http://127.0.0.1:5500/HTML/HTML%20HW/strangerthings.html"> Stranger Things</a>
+         <a href="http://127.0.0.1:5500/HTML/HTML%20HW/thecrown.html">The Crown</a> 
+            <a href="http://127.0.0.1:5500/HTML/HTML%20HW/peakyblinders.html">Peaky Blinders</a>
+           <a href="http://127.0.0.1:5500/HTML/HTML%20HW/dark.html">Dark</a>
+          <a href="http://127.0.0.1:5500/HTML/HTML%20HW/thewitcher.html">The Witcher</a>
+           <a href="http://127.0.0.1:5500/HTML/HTML%20HW/narcos.html">Narcos</a></li>
+           <a href="http://127.0.0.1:5500/HTML/HTML%20HW/theumbrellaacademy.html">The Umbrella Academy</a>
+          <a href="http://127.0.0.1:5500/HTML/HTML%20HW/moneyheist.html">Money Heist (La Casa de Papel)</a>
+           <a href="http://127.0.0.1:5500/HTML/HTML%20HW/bridgerton.html">Bridgerton</a>
+            <a href="http://127.0.0.1:5500/HTML/HTML%20HW/thelastkingdom.html">The Last Kingdom</a>
+        </div>
+    </div>
+</body>
+</html>
